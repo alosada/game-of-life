@@ -1,0 +1,179 @@
+@font-face {
+  font-family: bitwise;
+  src: url(bitwise.ttf);
+}
+
+body{
+  font-family: bitwise;
+  font-size: 1.5em;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#content{
+width:100vw;
+height: 100vh;
+}
+
+#wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 0;
+}
+
+.cell{
+  float: left;
+}
+
+.cell:hover{
+  background-color: red;
+}
+
+.live{
+  background-color: black;
+}
+
+#bottom-bar{
+  position: fixed;
+  right:0;
+  bottom: 0;
+  left:0;
+  padding-bottom: 1em;
+  text-align: center;
+  z-index: 1;
+}
+
+#top-bar{
+  position: fixed;
+  right:0;
+  top: 0;
+  left:0;
+  padding-top: 1em;
+  text-align: center;
+  z-index: 1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: 0 1em;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  color: red;
+}
+
+.arrows{
+  display: inline-block;
+  position: fixed;
+  top: 50vh;
+  margin-top: -48vh;
+  z-index: 10;
+  height: 96vh;
+  width: 50vw;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+}
+
+.arrow-size{
+  width:12px;
+  height: 19px;
+}
+
+.arrow-box{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  margin: 0 1vw;
+}
+
+.f-right{
+  float: right;
+}
+
+.f-left{
+  float: left;
+}
+
+#right{
+  position: fixed;
+  right:-47vw;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: 2px solid gray;
+  -webkit-transition: all 1s ease;
+}
+
+#right:hover{
+  right:0vw;
+}
+
+#right a{
+  margin: 0;
+}
+
+#left{
+  position: fixed;
+  left:-47vw;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 2px solid gray;
+  -webkit-transition: all 1s ease;
+}
+
+#left:hover{
+  left:0vw;
+  /*-webkit-animation: slideRight 10s 0s 1 linear;*/
+}
+
+.ani{
+}
+
+#left a{
+  margin:0;
+}
+
+.content{
+  text-align: left;
+  float: left;
+  width: 45vw;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.type{
+  display: inline-block;
+  float: left;
+  width:13vw;
+  height: 88vh;
+  margin:1vw;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.life{
+  margin-top:2vh;
+  font-size: 0.8em;
+}
+
+@-webkit-keyframes slideRight {
+  to {
+    left: 0;
+  }
+}
+

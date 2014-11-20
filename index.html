@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conway's Game of Life</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+  </div>
+  <div id="top-bar">
+    <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>
+  </div>
+  <div id="left" class="arrows left">
+    <a href="">
+      <div class="arrow-box f-right ani">
+        <img src="right.png" alt="Right arrow" class="arrow-size">
+        <p>
+          R<br>
+          U<br>
+          L<br>
+          E<br>
+          S<br>
+        </p>
+        <img src="right.png" alt="Right arrow" class="arrow-size">
+      </div>
+    </a>
+    <div class="content">
+      <ul>
+        <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li><br>
+        <li>Any live cell with two or three live neighbours lives on to the next generation.</li><br>
+        <li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li><br>
+        <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li><br>
+      </ul>
+    </div>
+  </div>
+  <div id="right" class="arrows right">
+    <a href="">
+      <div class="arrow-box f-left">
+      <img src="left.png" alt="Left arrow" class="arrow-size">
+        <p>
+          L<br>
+          I<br>
+          F<br>
+          E<br>
+          <br>
+          F<br>
+          O<br>
+          R<br>
+          M<br>
+          S<br>
+        </p>
+        <img src="left.png" alt="Left arrow" class="arrow-size">
+      </div>
+    </a>
+    <div class="content">
+      <div class="type">
+        Still life<br>
+        <div class="life">
+          Block
+          <div class="life-img"><img src="life_forms/block.png" alt="Block"></div>
+          Boat
+          <div class="life-img"><img src="life_forms/boat.png" alt="Boat"></div>
+          Beehive
+          <div class="life-img"><img src="life_forms/beehive.png" alt="Beehive"></div>
+          Loaf
+          <div class="life-img"><img src="life_forms/loaf.png" alt="Loaf"></div>
+        </div>
+      </div>
+      <div class="type">
+        Oscilators<br>
+        <div class="life">
+          Blinker
+          <div class="life-img"><img src="life_forms/blinker.gif" alt="Blinker"></div>
+          Toad
+          <div class="life-img"><img src="life_forms/toad.gif" alt="Toad"></div>
+          Beacon
+          <div class="life-img"><img src="life_forms/beacon.gif" alt="Beacon"></div>
+        </div>
+      </div>
+      <div class="type">
+        Movers<br>
+        <div class="life">
+          Glider
+          <div class="life-img"><img src="life_forms/glider.gif" alt="Glider"></div>
+          Spaceship
+          <div class="life-img"><img src="life_forms/spaceship.gif" alt="Spaceship"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom-bar">
+    <a href="" id="play">- play -</a>
+    <a href="" id="stop">- stop -</a>
+    <a href="" id="reset">- reset -</a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="gol.js"></script>
+</body>
+</html>
